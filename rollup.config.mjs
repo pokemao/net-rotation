@@ -8,7 +8,7 @@ export default defineConfig([
     output: {
       format: "umd",
       file: "dist/index.js",
-      name: "rotation"
+      name: "netRotation"
     },
     plugins: [
       babel({

@@ -6,10 +6,10 @@ class CreateRotation {
   private latestRequestTime: number = Date.now();
   private timer: ReturnType<typeof setTimeout> | null = null;
   private options: optionsIntf
-  constructor(options: optionsIntf) {
+  constructor(options?: optionsIntf) {
     this.options = options || {};
   }
-  network:networkType = (promiseFn, workFn, params) => {
+  private network:networkType = (promiseFn, workFn, params) => {
     this.latestRequestTime = Date.now();
     const currentRequestTime: number = Date.now();
     promiseFn(params).then((res) => {
