@@ -1,0 +1,30 @@
+{
+  "name": "rotation",
+  "version": "1.0.0",
+  "description": "轮训请求，改变params后可以重新开启轮训，且只会返回最新的请求的结果",
+  "keywords": [
+    "rotation",
+    "javascript",
+    "axios"
+  ],
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pokemao",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-typescript": "^7.23.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "rollup": "^4.9.6",
+    "rollup-plugin-dts": "^6.1.0"
+  }
+}
